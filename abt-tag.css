@@ -1,0 +1,104 @@
+/* ABT TAG (Education/Experience Grid) */
+.abt-tag {
+    width: 100%;
+    padding: 80px 20px;
+    background: var(--bg-body);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 800px; /* Ensure space for absolute items */
+}
+
+.st-line {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: var(--border-light);
+    border-radius: var(--radius-full);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.abt-tag p[id^="st-line"] {
+    width: 16px;
+    height: 16px;
+    background: var(--bg-card);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#st-line-p1 { top: 15%; }
+#st-line-p2 { top: 50%; }
+#st-line-p3 { top: 85%; }
+
+.box-child {
+    position: absolute;
+    width: 45%; /* Relies on relative container */
+    max-width: 350px;
+    background: var(--bg-card);
+    padding: 32px;
+    text-align: center;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+}
+
+.box-child:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.box-child h1 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 12px;
+    display: inline-block;
+}
+
+.box-child h3 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.box-child p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Positioning */
+.b1 { top: 10%; right: 52%; text-align: right; }
+.b2 { top: 45%; left: 52%; text-align: left; }
+.b3 { top: 80%; right: 52%; text-align: right; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .st-line, .abt-tag p[id^="st-line"] {
+        display: none;
+    }
+    
+    .abt-tag {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        min-height: auto;
+    }
+    
+    .box-child {
+        position: relative;
+        width: 100%;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        text-align: center !important;
+    }
+}
