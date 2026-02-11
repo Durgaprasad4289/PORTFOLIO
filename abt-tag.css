@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    min-height: 800px; /* Ensure space for absolute items */
+    min-height: 600px; /* Reduced from 800px to decrease whitespace */
 }
 
 .st-line {

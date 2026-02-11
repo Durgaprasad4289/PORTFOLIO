@@ -135,7 +135,7 @@
     }
 
     .certify-img:hover {
-        transform: translateY(-5px) scale(.8);
+        transform: translateY(-5px) scale(.95);
     }
 
     .btn-class h4 {
