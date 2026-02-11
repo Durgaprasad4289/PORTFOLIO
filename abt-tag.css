@@ -42,6 +42,8 @@
     max-width: 350px;
     background: var(--bg-card);
     padding: 32px;
+    opacity: 0;
+    transform: translateY(50px);
     text-align: center;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
@@ -75,6 +77,14 @@
     font-size: 0.95rem;
 }
 
+.box-child.show{
+    opacity: 1;
+    transform: translateY(0);   
+    transition-delay: 0.2s; 
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
+}
 /* Positioning */
 .b1 { top: 10%; right: 52%; text-align: right; }
 .b2 { top: 45%; left: 52%; text-align: left; }

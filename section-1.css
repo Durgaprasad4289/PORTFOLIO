@@ -280,6 +280,8 @@ html{
     }
     
     .img {
-        height: 350px;
+        padding-top: 100px;
+        height: 250px;
+        width: 250px;
     }
 }
