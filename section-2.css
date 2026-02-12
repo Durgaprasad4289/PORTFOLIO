@@ -52,6 +52,9 @@
     margin: 16px auto 0;
 }
 
+/* .my-text{
+    scale: .8;
+} */
 .my-text p {
     font-size: 1.1rem;
     line-height: 1.8;

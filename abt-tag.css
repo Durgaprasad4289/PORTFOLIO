@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    min-height: 600px; /* Reduced from 800px to decrease whitespace */
+    min-height: 1200px; /* Increased to 1600px to prevent boxes from overlapping the next section */
 }
 
 .st-line {
@@ -40,8 +40,9 @@
     position: absolute;
     width: 45%; /* Relies on relative container */
     max-width: 350px;
+    height: 400px;
+    padding: 18px 25px 40px 25px;
     background: var(--bg-card);
-    padding: 32px;
     opacity: 0;
     transform: translateY(50px);
     text-align: center;
@@ -59,10 +60,20 @@
 .box-child h1 {
     font-size: 1.5rem;
     color: var(--text-main);
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+    margin-right: 25%;
     border-bottom: 2px solid var(--primary-light);
     padding-bottom: 12px;
     display: inline-block;
+}
+
+.box-child h1 hr{
+    height: 2px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top:3px ;
+    background: blue;
 }
 
 .box-child h3 {
@@ -70,11 +81,15 @@
     color: var(--primary);
     margin-bottom: 8px;
     margin-top: 16px;
+    scale: .9;
+    transform: translateY(-2.5em);
 }
 
 .box-child p {
     color: var(--text-muted);
     font-size: 0.95rem;
+    scale: .9;
+    transform: translateY(-2.5em);
 }
 
 .box-child.show{

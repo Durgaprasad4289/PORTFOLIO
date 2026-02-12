@@ -10,6 +10,13 @@
     margin-top: 40px;
 }
 
+/* For laptop and tablet: increase the gap between sections */
+@media (min-width: 769px) {
+    .time-line {
+        margin-top: 400px; /* Increased by another 300px total to ensure a very clear gap */
+    }
+}
+
 .time-h1 {
     text-align: center;
     margin-bottom: 60px;
