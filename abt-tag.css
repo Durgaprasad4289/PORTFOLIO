@@ -44,7 +44,7 @@
     padding: 18px 25px 40px 25px;
     background: var(--bg-card);
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(50.1px);
     text-align: center;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
